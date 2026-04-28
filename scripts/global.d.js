@@ -26,8 +26,8 @@ await Products.GetDocuments().then((Documents) => {
             <div>
                 <span class="Name">${Document.Name}</span>
                 <span class="Description">${Document.Description}</span>
-                <span class="Seller">${Document.Seller}</span>
                 <div class="Align">
+                    <span class="Seller">${Document.Seller}</span>
                     <div class="Rating">${Document.Rating.toFixed(1)}<img src="images/Star.svg"></div>
                     <div class="Price">${FormatPrice(Document.Price)}</div>
                 </div>
@@ -47,9 +47,6 @@ await Products.GetDocuments().then((Documents) => {
     });
 });
 
-document.addEventListener("click", _ => {
-    const Rect = ProductDisplay.getBoundingClientRect();
-    if (_.x < Rect.left || _.x > Rect.right || _.y < Rect.top || _.y > Rect.bottom) {
-        ProductDisplay.style.display = "none";
-    }
+document.querySelector(".ProductDisplay > .Button.Back").addEventListener("click", () => {
+    ProductDisplay.style.display = "none";
 });
