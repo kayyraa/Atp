@@ -1,0 +1,6 @@
+{
+    "routes": [
+        { "src": "/scripts/firestore.js", "dest": "/404" }
+    ],
+    "cleanUrls": true
+}
