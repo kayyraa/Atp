@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" href="images/Favicon.svg" type="image/x-icon">
+        <link rel="stylesheet" href="scripts/style/style.css">
+        
+        <script type="module" src="scripts/firestore.js"></script>
+        <script type="module" src="scripts/global.d.js"></script>
+
+        <title>Atp</title>
+    </head>
+    <body>
+        <div class="Topbar">
+            <div Active href="Products" class="Button Products">Ürünler</div>
+            <div href="Profile" class="Button Profile"><span>Profil</span></div>
+            <div href="Cart" class="Button Cart"><span>Sepet</span><span>•</span><span class="Total">₺0,00</span></div>
+        </div>
+        <div class="Frames">
+            <div href="Products">
+                <div class="TextPrompt"><input placeholder="Ürün ara"></input></div>
+                <div class="Items"></div>
+            </div>
+            <div style="display: none;" href="Profile">
+                <div class="SignIn">
+                    <header>Giriş Yap</header>
+                    <div class="TextPrompt"><input class="NameInput" placeholder="Kullanıcı Adı"></input></div>
+                    <div class="TextPrompt"><input class="PasswordInput" placeholder="Şifre"></input></div>
+                    <div class="ButtonClass SignInButton">Giriş Yap</div>
+                </div>
+            </div>
+            <div style="display: none;" href="Cart"></div>
+        </div>
+        <div style="display: none;" class="ProductDisplay">
+            <div class="Images"></div>
+            <div class="Text">
+                <span class="Name">Name</span>
+                <span class="Description">Description</span>
+                <div class="Align">
+                    <div class="Seller">Seller</div>
+                    <div class="Rating">0.0<img src="images/Star.svg"></div>
+                    <div class="Price">0,00₺</div>
+                    <div class="Button Add">Sepete Ekle</div>
+                </div>
+                <div class="Stars">
+                    <div style="order: 5;" class="5">
+                        <img class="Outline" src="images/OutlineStar.svg">
+                        <img class="Fill" src="images/GoldStar.svg">
+                    </div>
+                    <div style="order: 4;" class="4">
+                        <img class="Outline" src="images/OutlineStar.svg">
+                        <img class="Fill" src="images/GoldStar.svg">
+                    </div>
+                    <div style="order: 3;" class="3">
+                        <img class="Outline" src="images/OutlineStar.svg">
+                        <img class="Fill" src="images/GoldStar.svg">
+                    </div>
+                    <div style="order: 2;" class="2">
+                        <img class="Outline" src="images/OutlineStar.svg">
+                        <img class="Fill" src="images/GoldStar.svg">
+                    </div>
+                    <div style="order: 1;" class="1">
+                        <img class="Outline" src="images/OutlineStar.svg">
+                        <img class="Fill" src="images/GoldStar.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="Button Back">Geri</div>
+        </div>
+    </body>
+</html>
